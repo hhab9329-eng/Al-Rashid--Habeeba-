@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habeeba & Al Rashid | Nikah Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#19140f;--gold:#d0b45e;--cream:#f4eddd;--muted:#a49a8b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:#382b20;font-family:'Playfair Display',Georgia,serif}
+nav{position:sticky;top:0;z-index:5;background:#19140ff5;color:var(--gold);padding:17px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-style:italic;font-size:21px}
+nav a{color:var(--gold);text-decoration:none;font:10px 'DM Sans',sans-serif;letter-spacing:2px;margin-left:13px}
+section{padding:70px 25px}
+.dark{background:var(--dark);color:var(--cream)}
+.light{background:var(--cream);color:#382b20}
+.eyebrow{font:10px 'DM Sans',sans-serif;letter-spacing:5px;color:var(--gold);text-transform:uppercase;line-height:2}
+h1{font-size:clamp(46px,12vw,78px);line-height:.98;margin:24px 0;color:var(--gold);letter-spacing:-2px}
+h2{font-size:clamp(34px,8vw,48px);line-height:1.1;margin:18px 0 28px;font-weight:600}
+h2 em{font-weight:400}
+p{line-height:1.85}
+.hero{padding:0 0 55px}
+.hero-art{min-height:390px;background:linear-gradient(0deg,#19140f 0%,#19140f08 65%),radial-gradient(ellipse at 50% 30%,#74634a,#29221b 65%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-art .monogram{position:absolute;top:25px;left:25px;font-size:21px;font-style:italic;color:#f0dfae}
+.couple{font-size:100px;filter:grayscale(.3);text-shadow:0 12px 35px #000}
+.hero-copy{padding:40px 28px 0}
+blockquote{border-left:2px solid var(--gold);margin:28px 0;padding:5px 18px;color:#cbb77b;font-style:italic;line-height:2}
+.subline{color:var(--muted);font-style:italic;letter-spacing:2px}
+.date-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #54462b;margin-top:35px}
+.date-grid div{text-align:center;padding:15px 3px;border-right:1px solid #54462b}
+.date-grid div:last-child{border:0}
+.date-grid strong{display:block;font-size:19px;color:var(--cream)}
+.date-grid span{font:9px 'DM Sans',sans-serif;letter-spacing:2px;color:var(--gold)}
+.countdown{display:flex;justify-content:center;gap:8px;margin:28px 0}
+.countdown div{flex:1;max-width:90px;border:1px solid #4d402b;padding:14px 3px;text-align:center}
+.countdown strong{display:block;color:var(--gold);font-size:25px}
+.countdown small{font:9px 'DM Sans',sans-serif;letter-spacing:1px;color:var(--muted)}
+.detail-card{border:1px solid #dfd2ba;border-radius:20px;padding:25px 20px;margin-top:35px}
+.detail-row{display:flex;gap:17px;padding:19px 0;border-bottom:1px solid #dfd2ba}
+.detail-row:last-child{border:0}
+.symbol{background:#eee5d1;border-radius:14px;padding:13px;height:50px;min-width:50px;text-align:center}
+.label{font:10px 'DM Sans',sans-serif;letter-spacing:3px;color:#a28a4b}
+.detail-row h3{font-size:19px;margin:6px 0}
+.detail-row p{margin:3px 0;color:#8b8174}
+.btn{display:block;text-align:center;text-decoration:none;padding:18px 12px;margin-top:14px;background:linear-gradient(100deg,#8f6b17,#cfb14e);color:white;font:10px 'DM Sans',sans-serif;letter-spacing:4px;border-radius:12px}
+.btn.outline{background:transparent;color:#8e7433;border:1px solid #dfd2ba}
+.family-card{border:1px solid #4a3d2a;padding:28px 25px;margin:28px 0}
+.family-card h3{font-size:29px;margin:15px 0}
+.family-card p{color:#aaa094}
+.family-card strong{color:var(--cream);font-size:18px;font-weight:400}
+.separator{text-align:center;color:var(--gold);font-size:30px;padding:10px}
+.blessing{text-align:center}
+.portrait{background:linear-gradient(145deg,#e8dcc7,#b6a58b);border-radius:18px;min-height:300px;display:flex;align-items:center;justify-content:center;font-size:95px;margin:35px 0 20px}
+input,textarea{width:100%;padding:20px 4px;border:0;border-bottom:1px solid #d7c9b1;background:transparent;font:italic 18px 'Playfair Display',serif;color:#382b20;outline:none}
+textarea{min-height:130px;resize:vertical}
+button{width:100%;padding:20px;background:var(--dark);border:0;color:var(--gold);letter-spacing:5px;font:11px 'DM Sans',sans-serif;margin-top:28px;cursor:pointer}
+.wish{background:#fffaf2;border:1px solid #e3d8c5;padding:23px;margin:20px 0;overflow-wrap:anywhere}
+.wish h3{font-style:italic;font-size:24px;margin:0 0 12px}
+.wish p{color:#847a6e}
+footer{text-align:center;background:var(--dark);color:var(--gold);padding:35px 20px;font-size:14px}
+@media(min-width:700px){section{padding:85px max(10%,calc((100% - 760px)/2))}.hero-copy{max-width:760px;margin:auto}.hero-art{min-height:550px}.portrait{min-height:450px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">H &amp; R</div>
+  <div>
+    <a href="#details">DETAILS</a>
+    <a href="#family">FAMILY</a>
+    <a href="#wishes">WISHES</a>
+  </div>
+</nav>
+
+<header class="hero dark">
+  <div class="hero-art">
+    <div class="monogram">H &amp; R</div>
+    <div class="couple" aria-label="Bride and groom illustration">🤵🏻‍♂️💍👰🏻‍♀️</div>
+  </div>
+  <div class="hero-copy">
+    <div class="eyebrow">Nikah Invitation · 2026</div>
+    <blockquote>
+      “And He put between you affection and mercy.”<br>
+      — Quran [30:21]
+    </blockquote>
+    <h1>Habeeba<br><span style="font-size:30px;font-style:italic;letter-spacing:5px">weds</span><br>Al Rashid</h1>
+    <p class="subline">Together is the most beautiful place to be.</p>
+    <div class="date-grid">
+      <div><strong>THU</strong><span>DAY</span></div>
+      <div><strong>24</strong><span>DATE</span></div>
+      <div><strong>DEC</strong><span>MONTH</span></div>
+      <div><strong>2026</strong><span>YEAR</span></div>
+    </div>
+    <div class="countdown">
+      <div><strong id="days">00</strong><small>DAYS</small></div>
+      <div><strong id="hours">00</strong><small>HOURS</small></div>
+      <div><strong id="minutes">00</strong><small>MINUTES</small></div>
+      <div><strong id="seconds">00</strong><small>SECONDS</small></div>
+    </div>
+  </div>
+</header>
+
+<section class="light" id="details">
+  <div class="eyebrow">The Occasion</div>
+  <h2>Every detail,<br><em>thoughtfully arranged</em></h2>
+  <div class="detail-card">
+    <div class="detail-row">
+      <div class="symbol">📅</div><div>
+        <div class="label">DATE &amp; TIME</div>
+        <h3>Thursday, 24 December 2026</h3>
+        <p>Nikah Ceremony</p>
+      </div>
+    </div>
+    <div class="detail-row">
+      <div class="symbol">📍</div><div>
+        <div class="label">VENUE</div>
+        <h3>Amj Auditorium</h3>
+        <p>Kanjirathummood, Kollam</p>
+      </div>
+    </div>
+    <div class="detail-row">
+      <div class="symbol">🤍</div><div>
+        <div class="label">WITH BLESSINGS</div>
+        <h3>Our beloved families</h3>
+        <p>We look forward to celebrating with you.</p>
+      </div>
+    </div>
+  </div>
+  <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Amj+Auditorium+Kanjirathummood+Kollam">📍 &nbsp; GET DIRECTIONS</a>
+  <a class="btn outline" id="calendar" href="#">📅 &nbsp; ADD TO CALENDAR</a>
+  <a class="btn outline" id="rsvp" target="_blank" rel="noopener" href="https://wa.me/?text=Assalamu%20Alaikum%2C%20I%20would%20like%20to%20RSVP%20for%20Habeeba%20and%20Al%20Rashid%27s%20Nikah%20on%2024%20December%202026.">💬 &nbsp; WHATSAPP RSVP</a>
+</section>
+
+<section class="dark" id="family">
+  <div class="eyebrow">Two Families, One Journey</div>
+  <h2>With the blessings<br><em>of our families</em></h2>
+  <div class="family-card">
+    <div class="eyebrow">Groom</div>
+    <h3>Al Rashid</h3>
+    <p>Son of</p>
+    <strong>Nizarudeen<br>&amp; Sheeja</strong>
+  </div>
+  <div class="separator">✦</div>
+  <div class="family-card">
+    <div class="eyebrow">Bride</div>
+    <h3>Habeeba</h3>
+    <p>Daughter of</p>
+    <strong>Riyas<br>&amp; Saleena</strong>
+  </div>
+</section>
+
+<section class="light blessing">
+  <div class="eyebrow">With Love</div>
+  <h2>Blessings from<br><em>family and friends</em></h2>
+  <div class="portrait">🤵🏻‍♂️🤍👰🏻‍♀️</div>
+  <p><em>Masha Allah!<br>Habeeba &amp; Al Rashid</em></p>
+  <div class="eyebrow">With love &amp; blessings from friends and family</div>
+  <hr style="border:0;border-top:1px solid #c8ad65;margin:35px auto;width:80px">
+  <p><em>“And We created you in pairs.”</em><br>— Quran [78:8]</p>
+  <p><em>“And He put between you affection and mercy.”</em><br>— Quran [30:21]</p>
+</section>
+
+<section class="light" id="wishes">
+  <div class="eyebrow">Your Blessings</div>
+  <h2>Send your<br><em>heartfelt wishes</em></h2>
+  <form id="wishForm">
+    <input id="guestName" placeholder="Your Name" required maxlength="60">
+    <textarea id="guestMessage" placeholder="Write your wishes for Habeeba & Al Rashid..." required maxlength="500"></textarea>
+    <button type="submit">SEND WISHES</button>
+  </form>
+  <div class="eyebrow" style="margin-top:55px">Messages from loved ones</div>
+  <div id="wishList"></div>
+  <p style="font-size:12px;color:#85796a">Note: this demo saves wishes in this browser only. To share messages with all visitors, connect an online database.</p>
+</section>
+
+<footer>
+  <div style="font-size:25px;font-style:italic">H &amp; R</div>
+  <p>Made with love for Habeeba &amp; Al Rashid</p>
+  <div class="eyebrow">24 · 12 · 2026</div>
+</footer>
+
+<script>
+const weddingDate = new Date('2026-12-24T12:00:00');
+function countdown(){
+  let diff = Math.max(0, weddingDate - new Date());
+  document.getElementById('days').textContent = Math.floor(diff/86400000);
+  document.getElementById('hours').textContent = Math.floor(diff/3600000)%24;
+  document.getElementById('minutes').textContent = Math.floor(diff/60000)%60;
+  document.getElementById('seconds').textContent = Math.floor(diff/1000)%60;
+}
+countdown(); setInterval(countdown,1000);
+
+const pad=n=>String(n).padStart(2,'0');
+const start='20261224T120000';
+const end='20261224T124500';
+const eventUrl='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Nikah: Habeeba & Al Rashid')+'&dates='+start+'/'+end+'&details='+encodeURIComponent('Nikah ceremony of Habeeba and Al Rashid')+'&location='+encodeURIComponent('Amj Auditorium, Kanjirathummood, Kollam');
+document.getElementById('calendar').href=eventUrl;
+
+const form=document.getElementById('wishForm');
+const list=document.getElementById('wishList');
+function loadWishes(){
+  list.replaceChildren();
+  const wishes=JSON.parse(localStorage.getItem('hrWishes')||'[]');
+  wishes.slice().reverse().forEach(item=>{
+    const card=document.createElement('div');card.className='wish';
+    const h=document.createElement('h3');h.textContent=item.name;
+    const p=document.createElement('p');p.textContent='“'+item.message+'”';
+    card.append(h,p);list.append(card);
+  });
+}
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const wishes=JSON.parse(localStorage.getItem('hrWishes')||'[]');
+  wishes.push({
+    name:document.getElementById('guestName').value.trim(),
+    message:document.getElementById('guestMessage').value.trim()
+  });
+  localStorage.setItem('hrWishes',JSON.stringify(wishes));
+  form.reset();loadWishes();
+});
+loadWishes();
+</script>
+</body>
+</html>
